@@ -1,36 +1,148 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏠 Wholesale Realty CRM
 
-## Getting Started
+A comprehensive CRM system built specifically for wholesale real estate businesses. Manage sellers, properties, investors, and deals all in one place with document storage and full pipeline tracking.
 
-First, run the development server:
+## ✨ Features
+
+### 📊 Dashboard
+- Real-time metrics and analytics
+- Revenue tracking
+- Pipeline overview with progress visualization
+- Quick action buttons
+
+### 👥 Seller Management
+- Complete contact information tracking
+- Lead source attribution
+- Status pipeline: New → Contacted → Qualified → Offer Made → Under Contract → Closed
+- Activity timeline
+
+### 🏠 Property Management
+- Detailed property information (address, beds, baths, sqft, etc.)
+- Financial tracking (estimated value, asking price, our offer, ARV, repair costs)
+- Property condition assessment
+- Photo uploads
+- Document storage (contracts, inspections, etc.)
+- Link to sellers
+
+### 💼 Investor/Buyer List Management
+- Investment strategy tracking (BRRRR, fix-and-flip, buy-and-hold, wholesale)
+- Budget range tracking
+- Geographic preferences
+- Property type preferences
+- Financing needs tracking
+- Proof of funds status
+- Document storage
+
+### 🤝 Deal Management
+- Connect properties to investors
+- Track purchase and sale prices
+- Calculate assignment fees automatically
+- Deal types: wholesale, double-close, assignment
+- Contract and closing date management
+- Complete document storage
+
+### ✅ Task Management
+- Create and assign tasks
+- Priority levels (low, medium, high, urgent)
+- Link to sellers, investors, properties, or deals
+- Due date tracking
+
+### 📁 Document & Image Storage
+- Supabase storage integration
+- Organized by entity type
+- Secure document management
+
+## 🚀 Quick Start
+
+### 1. Database Setup
+
+Run the SQL schema in your Supabase project:
+
+1. Go to: https://owmffmdtppjlixssljcm.supabase.co
+2. Navigate to SQL Editor
+3. Copy and run the contents of `supabase-schema.sql`
+
+### 2. Storage Buckets
+
+Create these buckets in Supabase Storage:
+- `property-images`
+- `property-documents`
+- `investor-documents`
+- `deal-documents`
+
+### 3. Run the Application
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Database**: Supabase (PostgreSQL)
+- **Storage**: Supabase Storage
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
 
-## Learn More
+## 📊 Database Schema
 
-To learn more about Next.js, take a look at the following resources:
+### Core Tables
+- `sellers` - Property seller leads
+- `properties` - Property inventory
+- `investors` - Buyer list
+- `deals` - Transaction pipeline
+- `tasks` - Task management
+- `activities` - Activity log
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Document Tables
+- `property_images`
+- `property_documents`
+- `investor_documents`
+- `deal_documents`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Roadmap
 
-## Deploy on Vercel
+- [x] Dashboard with metrics
+- [x] Database schema
+- [x] Navigation structure
+- [ ] Seller CRUD pages
+- [ ] Property CRUD pages with image upload
+- [ ] Investor CRUD pages
+- [ ] Deal pipeline with drag-and-drop
+- [ ] Auto-matching system
+- [ ] Email integration
+- [ ] SMS integration
+- [ ] Calendar/scheduling
+- [ ] Advanced reporting
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📂 Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+wholesale-crm/
+├── app/
+│   ├── page.tsx              # Dashboard
+│   ├── layout.tsx            # Root layout
+│   └── globals.css           # Global styles
+├── components/
+│   └── Sidebar.tsx           # Navigation
+├── lib/
+│   ├── supabase.ts           # Supabase client
+│   └── database.types.ts     # TypeScript types
+├── supabase-schema.sql       # Database schema
+└── README.md
+```
+
+## 📝 Notes
+
+- Environment variables are pre-configured in `.env.local`
+- The dashboard fetches real-time data from Supabase
+- All tables have automatic `updated_at` triggers
+- Indexes are optimized for performance
+
+## 📄 License
+
+MIT

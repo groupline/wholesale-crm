@@ -1,0 +1,160 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8]
+  - alert [ref=e11]
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - heading "Wholesale CRM" [level=1] [ref=e15]
+      - navigation [ref=e16]:
+        - link "Dashboard" [active] [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img [ref=e18]
+          - text: Dashboard
+        - link "Sellers" [ref=e23] [cursor=pointer]:
+          - /url: /sellers
+          - img [ref=e24]
+          - text: Sellers
+        - link "Properties" [ref=e29] [cursor=pointer]:
+          - /url: /properties
+          - img [ref=e30]
+          - text: Properties
+        - link "Investors" [ref=e33] [cursor=pointer]:
+          - /url: /investors
+          - img [ref=e34]
+          - text: Investors
+        - link "Deals" [ref=e37] [cursor=pointer]:
+          - /url: /deals
+          - img [ref=e38]
+          - text: Deals
+        - link "Tasks" [ref=e41] [cursor=pointer]:
+          - /url: /tasks
+          - img [ref=e42]
+          - text: Tasks
+        - link "Calendar" [ref=e45] [cursor=pointer]:
+          - /url: /calendar
+          - img [ref=e46]
+          - text: Calendar
+        - link "Activities" [ref=e49] [cursor=pointer]:
+          - /url: /activities
+          - img [ref=e50]
+          - text: Activities
+        - link "Communications" [ref=e52] [cursor=pointer]:
+          - /url: /communications
+          - img [ref=e53]
+          - text: Communications
+        - link "Broadcast" [ref=e56] [cursor=pointer]:
+          - /url: /broadcast
+          - img [ref=e57]
+          - text: Broadcast
+        - link "Automations" [ref=e60] [cursor=pointer]:
+          - /url: /automations
+          - img [ref=e61]
+          - text: Automations
+        - link "Contracts" [ref=e63] [cursor=pointer]:
+          - /url: /contracts
+          - img [ref=e64]
+          - text: Contracts
+        - link "Calculators" [ref=e67] [cursor=pointer]:
+          - /url: /calculators
+          - img [ref=e68]
+          - text: Calculators
+        - link "Marketing" [ref=e70] [cursor=pointer]:
+          - /url: /marketing
+          - img [ref=e71]
+          - text: Marketing
+        - link "Reports" [ref=e73] [cursor=pointer]:
+          - /url: /reports
+          - img [ref=e74]
+          - text: Reports
+        - link "Documents" [ref=e77] [cursor=pointer]:
+          - /url: /documents
+          - img [ref=e78]
+          - text: Documents
+        - link "Settings" [ref=e81] [cursor=pointer]:
+          - /url: /settings
+          - img [ref=e82]
+          - text: Settings
+      - generic [ref=e85]:
+        - button "Sign Out" [ref=e86]:
+          - img [ref=e87]
+          - text: Sign Out
+        - generic [ref=e90]:
+          - paragraph [ref=e91]: Pinnacle Realty Partners
+          - paragraph [ref=e92]: v2.0.0
+    - main [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - heading "Dashboard" [level=1] [ref=e96]
+          - paragraph [ref=e97]: Welcome to your Wholesale Realty CRM
+        - generic [ref=e98]:
+          - generic [ref=e101]:
+            - img [ref=e103]
+            - generic [ref=e109]:
+              - term [ref=e110]: Total Sellers
+              - definition [ref=e111]: "1"
+          - generic [ref=e114]:
+            - img [ref=e116]
+            - generic [ref=e120]:
+              - term [ref=e121]: Properties
+              - definition [ref=e122]: "0"
+          - generic [ref=e125]:
+            - img [ref=e127]
+            - generic [ref=e131]:
+              - term [ref=e132]: Investors
+              - definition [ref=e133]: "0"
+          - generic [ref=e136]:
+            - img [ref=e138]
+            - generic [ref=e142]:
+              - term [ref=e143]: Active Deals
+              - definition [ref=e144]: "0"
+          - generic [ref=e147]:
+            - img [ref=e149]
+            - generic [ref=e153]:
+              - term [ref=e154]: Closed Deals
+              - definition [ref=e155]: "0"
+          - generic [ref=e158]:
+            - img [ref=e160]
+            - generic [ref=e163]:
+              - term [ref=e164]: Total Revenue
+              - definition [ref=e165]: $0
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - heading "Quick Actions" [level=2] [ref=e168]
+            - generic [ref=e169]:
+              - link "Add New Seller Add a new property seller lead" [ref=e170] [cursor=pointer]:
+                - /url: /sellers
+                - generic [ref=e171]:
+                  - img [ref=e172]
+                  - generic [ref=e177]:
+                    - heading "Add New Seller" [level=3] [ref=e178]
+                    - paragraph [ref=e179]: Add a new property seller lead
+              - link "Add New Investor Add an investor to your buyer list" [ref=e180] [cursor=pointer]:
+                - /url: /investors
+                - generic [ref=e181]:
+                  - img [ref=e182]
+                  - generic [ref=e185]:
+                    - heading "Add New Investor" [level=3] [ref=e186]
+                    - paragraph [ref=e187]: Add an investor to your buyer list
+              - link "Add New Property List a new property opportunity" [ref=e188] [cursor=pointer]:
+                - /url: /properties
+                - generic [ref=e189]:
+                  - img [ref=e190]
+                  - generic [ref=e193]:
+                    - heading "Add New Property" [level=3] [ref=e194]
+                    - paragraph [ref=e195]: List a new property opportunity
+          - generic [ref=e196]:
+            - heading "Pipeline Overview" [level=2] [ref=e197]
+            - generic [ref=e198]:
+              - generic [ref=e200]:
+                - generic [ref=e201]: Active Properties
+                - generic [ref=e202]: "0"
+              - generic [ref=e206]:
+                - generic [ref=e207]: Active Deals
+                - generic [ref=e208]: "0"
+              - generic [ref=e212]:
+                - generic [ref=e213]: Closed Deals
+                - generic [ref=e214]: "0"
+```
