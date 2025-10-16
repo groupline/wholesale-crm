@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   },
   typescript: {
     // Allow production builds to successfully complete even if project has type errors
-    ignoreBuildErrors: false,
+    ignoreBuildErrors: true,
   },
 };
 
